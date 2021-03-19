@@ -1,0 +1,35 @@
+{
+  "_comment": "post with id 4 is horizontal and post with id 5 is vertical, use proper images",
+  "posts": [
+    {
+      "id": 1,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/innovations-apple-could-offer-tile.jpg"
+    },
+    {
+      "id": 2,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/myths-misconceptions-about-ram-tile.jpg"
+    },
+    {
+      "id": 3,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/cycling-benefits-tile.jpg"
+    },
+    {
+      "id": 4,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/nokia-c1-c2-c3-unboxing-and-review-tile.jpg"
+    },
+    {
+      "id": 5,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/the-best-dialogue-of-movies-and-importance-of-dialogue-tile.jpg"
+    },
+    {
+      "id": 6,
+      "title": "lorem lorem lorem",
+      "image": "https://www.digikala.com/mag/wp-content/uploads/2018/05/galaxy-s21-ultra-vs-iphone-12-pro-max-pixel-5-note-20-ultra-low-light-camera-comparison-tile.jpg"
+    }
+  ]
+}

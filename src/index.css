@@ -11,12 +11,12 @@ body {
     @apply p-2 text-blue-400 text-sm;
   }
   .category {
-    @apply flex items-center flex-shrink-0;
+    @apply relative flex items-center flex-shrink-0 h-14;
   }
   .category-icon {
-    @apply text-4xl text-gray-400 p-2;
+    @apply text-2xl text-gray-400 w-6 h-6 mr-5;
   }
   .category-title {
-    @apply p-2 text-gray-400;
+    @apply p-2 text-gray-400 absolute right-14;
   }
 }
