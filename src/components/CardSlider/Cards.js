@@ -19,12 +19,10 @@ export default class Cards extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get("http://127.0.0.1:5500/src/assets/data/cards.json")
-      .then((res) => {
-        const cards = res.data.cards;
-        this.setState({ cards });
-      });
+    axios.get("http://127.0.0.1:8080/cards.json").then((res) => {
+      const cards = res.data.cards;
+      this.setState({ cards });
+    });
   }
   render() {
     return (
