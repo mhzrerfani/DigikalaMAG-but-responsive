@@ -9,12 +9,10 @@ export default class Posts extends Component {
     };
   }
   componentDidMount() {
-    axios
-      .get("http://127.0.0.1:5500/src/assets/data/posts.json")
-      .then((res) => {
-        const posts = res.data.posts;
-        this.setState({ posts });
-      });
+    axios.get("http://127.0.0.1:8080/posts.json").then((res) => {
+      const posts = res.data.posts;
+      this.setState({ posts });
+    });
   }
   render() {
     return (

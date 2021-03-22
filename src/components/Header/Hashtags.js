@@ -11,12 +11,10 @@ export default class Hashtags extends Component {
   }
 
   componentDidMount() {
-    axios
-      .get("http://127.0.0.1:5500/src/assets/data/hashtags.json")
-      .then((res) => {
-        const hashtags = res.data.hashtags;
-        this.setState({ hashtags });
-      });
+    axios.get("http://127.0.0.1:8080/hashtags.json").then((res) => {
+      const hashtags = res.data.hashtags;
+      this.setState({ hashtags });
+    });
   }
   render() {
     return (
