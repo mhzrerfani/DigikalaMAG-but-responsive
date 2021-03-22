@@ -19,4 +19,7 @@ body {
   .category-title {
     @apply p-2 text-gray-400 absolute right-14;
   }
+  .card {
+    @apply bg-blue-400 h-80;
+  }
 }

@@ -23,7 +23,9 @@ export default class Hashtags extends Component {
       <div>
         <ul className="list-none bg-gray-100 flex rounded-full p-4">
           {this.state.hashtags.map((hashtag) => (
-            <li className="hashtag">{hashtag}#</li>
+            <li className="hashtag" key={hashtag}>
+              {hashtag}#
+            </li>
           ))}
         </ul>
       </div>
