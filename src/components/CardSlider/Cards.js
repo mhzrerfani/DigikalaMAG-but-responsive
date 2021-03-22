@@ -1,14 +1,12 @@
 import React, { Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
+import SwiperCore, { Navigation } from "swiper";
 import axios from "axios";
 
 import "swiper/swiper.scss";
 import "swiper/components/navigation/navigation.scss";
-import "swiper/components/pagination/pagination.scss";
-import "swiper/components/scrollbar/scrollbar.scss";
 
-SwiperCore.use([Navigation, Scrollbar]);
+SwiperCore.use([Navigation]);
 export default class Cards extends Component {
   constructor(props) {
     super(props);
@@ -18,13 +16,9 @@ export default class Cards extends Component {
   }
 
   componentDidMount() {
-    const swiper = document.querySelector(".swiper-container").swiper;
-
-    // Now you can use all slider methods like
-    console.log(swiper.update);
-
-    axios.get("http://127.0.0.1:8080/cards.json").then((res) => {
-      const cards = res.data.cards;
+    axios.get("http://127.0.0.1:8080/articles.json").then((res) => {
+      console.log(res);
+      const cards = res.data.articles;
       this.setState({ cards });
     });
   }
@@ -32,10 +26,21 @@ export default class Cards extends Component {
     return (
       <div>
         <Swiper
+          breakpoints={{
+            // when window width is >= 640px
+            640: {
+              width: 640,
+              slidesPerView: 1,
+            },
+            // when window width is >= 768px
+            768: {
+              width: 768,
+              slidesPerView: 2,
+            },
+          }}
           navigation
           spaceBetween={50}
           slidesPerView={5}
-          scrollbar={{ draggable: true }}
           key={Date.now()}
         >
           {this.state.cards.map((card) => {
