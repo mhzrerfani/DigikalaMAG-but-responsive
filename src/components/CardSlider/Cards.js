@@ -1,15 +1,14 @@
 import React, { Component } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import SwiperCore, { Navigation } from "swiper";
+import SwiperCore, { Navigation, Pagination, Scrollbar } from "swiper";
 import axios from "axios";
-import "swiper/swiper.scss";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faChevronRight,
-  faChevronLeft,
-} from "@fortawesome/free-solid-svg-icons";
 
-SwiperCore.use([Navigation]);
+import "swiper/swiper.scss";
+import "swiper/components/navigation/navigation.scss";
+import "swiper/components/pagination/pagination.scss";
+import "swiper/components/scrollbar/scrollbar.scss";
+
+SwiperCore.use([Navigation, Scrollbar]);
 export default class Cards extends Component {
   constructor(props) {
     super(props);
@@ -19,6 +18,11 @@ export default class Cards extends Component {
   }
 
   componentDidMount() {
+    const swiper = document.querySelector(".swiper-container").swiper;
+
+    // Now you can use all slider methods like
+    console.log(swiper.update);
+
     axios.get("http://127.0.0.1:8080/cards.json").then((res) => {
       const cards = res.data.cards;
       this.setState({ cards });
@@ -26,32 +30,17 @@ export default class Cards extends Component {
   }
   render() {
     return (
-      <div className="flex items-center h-full relative">
-        <button className="swiper-button-prev absolute right-0 z-10 bg-white rounded-l-full w-16 h-32">
-          <FontAwesomeIcon
-            icon={faChevronRight}
-            className="text-4xl text-gray-400 "
-          />
-        </button>
-        <button className="swiper-button-next absolute left-0 z-10 bg-white rounded-r-full w-16 h-32">
-          <FontAwesomeIcon
-            icon={faChevronLeft}
-            className="text-4xl text-gray-400"
-          />
-        </button>
-
+      <div>
         <Swiper
-          className="min-w-full"
-          navigation={{
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          }}
+          navigation
           spaceBetween={50}
           slidesPerView={5}
+          scrollbar={{ draggable: true }}
+          key={Date.now()}
         >
           {this.state.cards.map((card) => {
             return (
-              <SwiperSlide className=" bg-white shadow-xl" key={card.id}>
+              <SwiperSlide className="bg-white shadow-xl" key={card.id}>
                 <div>
                   <img src={card.cover} alt="cover"></img>
                   <h5>{card.title}</h5>
