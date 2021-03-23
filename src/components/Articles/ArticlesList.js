@@ -16,10 +16,10 @@ export default class ArticlesList extends Component {
   }
   render() {
     return (
-      <div className="grid grid-cols-3 w-3/4 gap-2">
+      <div className="grid grid-cols-3 w-3/4 gap-4 ml-4">
         {this.state.articles.map((article) => {
           return (
-            <div>
+            <div className="shadow-xl">
               <img src={article.cover} alt="cover"></img>
               <h5>{article.title}</h5>
               <div className="flex justify-between items-center pr-2 pl-2">
@@ -31,7 +31,6 @@ export default class ArticlesList extends Component {
                   ></img>
                   <span className="text-sm">{article.author}</span>
                 </div>
-
                 <span className="text-sm">{article.date}</span>
               </div>
             </div>

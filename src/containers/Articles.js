@@ -1,17 +1,20 @@
 import React, { Component } from "react";
 import Title from "../components/Articles/Title";
 import ArticlesList from "../components/Articles/ArticlesList";
-import SideMenu from "../components/Articles/SideMenu";
-
+import SideMenus from "../components/Articles/SideMenus";
+import StickMenu from "../components/Articles/StickMenu";
 export default class Articles extends Component {
   render() {
     return (
-      <div className="mt-32">
-        <div className="w-3/4 mx-auto">
+      <div className="mt-32 flex justify-start">
+        <div>
+          <StickMenu />
+        </div>
+        <div className="w-3/4 mx-a">
           <Title />
-          <div className="flex">
+          <div className="flex items-start">
             <ArticlesList />
-            <SideMenu />
+            <SideMenus />
           </div>
         </div>
       </div>
