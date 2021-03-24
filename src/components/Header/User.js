@@ -16,8 +16,8 @@ export default class User extends Component {
 
   render() {
     return (
-      <div className="flex  mr-6 text-gray-400  items-center  pr-6 border-r-2 border-gray-50">
-        <div className=" pr-6 border-r-2 border-gray-50">
+      <div className="flex text-gray-400 items-center pr-6">
+        <div className="border-gray-50">
           <FontAwesomeIcon icon={faUser} className="text-4xl text-gray-400" />
         </div>
 

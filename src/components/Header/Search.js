@@ -5,7 +5,7 @@ import { faSearch } from "@fortawesome/free-solid-svg-icons";
 export default class Search extends Component {
   render() {
     return (
-      <div>
+      <div className="pl-6 border-l-2 border-gray-200">
         <FontAwesomeIcon icon={faSearch} className="text-4xl text-gray-400" />
       </div>
     );
