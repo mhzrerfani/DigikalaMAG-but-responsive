@@ -16,15 +16,15 @@ export default class User extends Component {
 
   render() {
     return (
-      <div className="flex border-r mr-4">
-        <FontAwesomeIcon
-          icon={faUser}
-          className="text-4xl text-gray-400 mr-4"
-        />
-        <div onClick={this.toggleModal}>
+      <div className="flex  mr-6 text-gray-400  items-center  pr-6 border-r-2 border-gray-50">
+        <div className=" pr-6 border-r-2 border-gray-50">
+          <FontAwesomeIcon icon={faUser} className="text-4xl text-gray-400" />
+        </div>
+
+        <div onClick={this.toggleModal} className="mr-5">
           <button>ورود</button>
         </div>
-        <span>/</span>
+        <span className="ml-2 mr-2">/</span>
         <h3>
           <a href="#">ثبت نام</a>
         </h3>
