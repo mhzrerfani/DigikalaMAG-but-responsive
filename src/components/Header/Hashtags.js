@@ -19,13 +19,13 @@ export default class Hashtags extends Component {
   render() {
     return (
       <div>
-        <ul className="list-none bg-gray-100 flex rounded-full pr-4 pl-4 ">
+        <div className="bg-gray-100 flex rounded-full pr-6 pl-6 ">
           {this.state.hashtags.map((hashtag) => (
-            <li className="hashtag" key={hashtag}>
-              {hashtag}#
-            </li>
+            <span className="hashtag" key={hashtag}>
+              #{hashtag}
+            </span>
           ))}
-        </ul>
+        </div>
       </div>
     );
   }

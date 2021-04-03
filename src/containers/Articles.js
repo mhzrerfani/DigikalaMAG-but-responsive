@@ -10,7 +10,7 @@ export default class Articles extends Component {
         <div>
           <StickMenu />
         </div>
-        <div className="w-3/4 mx-a">
+        <div className="w-full max-w-6xl mx-a">
           <Title />
           <div className="flex items-start">
             <ArticlesList />

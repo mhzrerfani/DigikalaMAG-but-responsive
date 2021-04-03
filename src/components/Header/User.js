@@ -26,7 +26,7 @@ export default class User extends Component {
         </div>
         <span className="ml-2 mr-2">/</span>
         <h3>
-          <a href="#">ثبت نام</a>
+          <a href="https://www.digikala.com/users/login-register/">ثبت نام</a>
         </h3>
         {this.state.seen ? <UserModal toggle={this.toggleModal} /> : null}
       </div>

@@ -1,0 +1,44 @@
+{
+  "categories": [
+    {
+      "key": 0,
+      "name": "جدیدترین مطالب",
+      "icon": "faNewspaper"
+    },
+    {
+      "key": 1,
+      "name": "علم و تکنولوژی",
+      "icon": "faMicrochip"
+    },
+    {
+      "key": 2,
+      "name": "بازی ویدئویی",
+      "icon": "faGamepad"
+    },
+    {
+      "key": 3,
+      "name": "کتاب و ادبیات",
+      "icon": "faBook"
+    },
+    {
+      "key": 4,
+      "name": "هنر و سینما",
+      "icon": "faVideo"
+    },
+    {
+      "key": 5,
+      "name": "سبک زندگی",
+      "icon": "faTree"
+    },
+    {
+      "key": 6,
+      "name": "اتاق خبر دیجی کالا",
+      "icon": "faStore"
+    },
+    {
+      "key": 7,
+      "name": "فروشگاه دیجی کالا",
+      "icon": "faStore"
+    }
+  ]
+}

@@ -26,21 +26,21 @@ export default class Cards extends Component {
     return (
       <div>
         <Swiper
-          breakpoints={{
-            // when window width is >= 640px
-            640: {
-              width: 640,
-              slidesPerView: 1,
-            },
-            // when window width is >= 768px
-            768: {
-              width: 768,
-              slidesPerView: 2,
-            },
-          }}
+          // breakpoints={{
+          //   // when window width is >= 640px
+          //   640: {
+          //     width: 640,
+          //     slidesPerView: 1,
+          //   },
+          //   // when window width is >= 768px
+          //   768: {
+          //     width: 768,
+          //     slidesPerView: 2,
+          //   },
+          // }}
           navigation
           spaceBetween={50}
-          slidesPerView={5}
+          slidesPerView={4}
           key={Date.now()}
         >
           {this.state.cards.map((card) => {

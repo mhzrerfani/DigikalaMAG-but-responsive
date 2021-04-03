@@ -8,16 +8,16 @@ body {
 
 @layer components {
   .hashtag {
-    @apply p-2 text-blue-400 text-sm;
+    @apply px-5 py-2 text-blue-400 text-sm font-bold;
   }
   .category {
-    @apply relative flex items-center flex-shrink-0 h-14;
+    @apply relative flex items-center flex-shrink-0 h-12 text-gray-400 hover:text-white;
   }
   .category-icon {
-    @apply text-2xl text-gray-400 w-6 h-6 mr-5;
+    @apply text-xl  w-6 h-6 mr-5;
   }
   .category-title {
-    @apply p-2 text-gray-400 absolute right-14;
+    @apply p-2 absolute right-14 text-sm font-bold;
   }
   .card {
     @apply bg-blue-400 h-80;
