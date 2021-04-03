@@ -5,7 +5,7 @@ import Articles from "./containers/Articles";
 import Footer from "./containers/Footer";
 function App() {
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100 font-vazir">
       <Header />
       <HomePage />
       <CardsSlider />

@@ -48,15 +48,15 @@ export default class Cards extends Component {
               <SwiperSlide className="bg-white shadow-xl" key={card.id}>
                 <div>
                   <img src={card.cover} alt="cover"></img>
-                  <h5>{card.title}</h5>
-                  <div className="flex justify-between items-center pr-2 pl-2">
+                  <h5 className="text-center mx-8 my-3">{card.title}</h5>
+                  <div className="flex justify-between items-center mx-5 text-gray-400 mb-5">
                     <div className="flex items-center">
                       <img
                         src={card.avatar}
                         alt="avatar"
-                        className="rounded-full"
+                        className="rounded-full w-10"
                       ></img>
-                      <span className="text-sm">{card.author}</span>
+                      <span className="text-sm mr-2">{card.author}</span>
                     </div>
 
                     <span className="text-sm">{card.date}</span>

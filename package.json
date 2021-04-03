@@ -17,6 +17,7 @@
     "react-scripts": "4.0.3",
     "sass": "^1.32.8",
     "swiper": "^6.5.0",
+    "vazir-font": "^27.2.2",
     "web-vitals": "^1.1.0"
   },
   "scripts": {

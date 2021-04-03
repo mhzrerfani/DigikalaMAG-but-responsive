@@ -21,16 +21,17 @@ export default class ArticlesList extends Component {
           return (
             <div className="shadow-xl">
               <img src={article.cover} alt="cover"></img>
-              <h5>{article.title}</h5>
-              <div className="flex justify-between items-center pr-2 pl-2">
+              <h5 className="text-center mx-8 my-3">{article.title}</h5>
+              <div className="flex justify-between items-center mx-5 text-gray-400 mb-5">
                 <div className="flex items-center">
                   <img
                     src={article.avatar}
                     alt="avatar"
-                    className="rounded-full"
+                    className="rounded-full w-10"
                   ></img>
-                  <span className="text-sm">{article.author}</span>
+                  <span className="text-sm mr-2">{article.author}</span>
                 </div>
+
                 <span className="text-sm">{article.date}</span>
               </div>
             </div>
