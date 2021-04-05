@@ -11,7 +11,7 @@ body {
     @apply px-5 py-2 text-blue-400 text-sm font-bold;
   }
   .category {
-    @apply relative flex items-center flex-shrink-0 h-12 text-gray-400 hover:text-white;
+    @apply relative flex items-center flex-shrink-0 h-13 text-gray-400 hover:text-white;
   }
   .category-icon {
     @apply text-xl  w-6 h-6 mr-5;

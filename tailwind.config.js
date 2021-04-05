@@ -3,10 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      sm: "640px",
-      md: "768px",
-      lg: "1024px",
-      xl: "1280px",
+      phone: "640px",
+      tablet: "768px",
+      loptop: "1024px",
+      desktop: "1280px",
     },
     fontFamily: {
       vazir: "Vazir",
@@ -23,6 +23,14 @@ module.exports = {
       },
       colors: {
         primary: "#2899d5",
+        footer1: "#6b7074",
+        footer2: "#5a5f64",
+        footer3: "#a6a9ab",
+        instagram: "#FD1D1D",
+        twitter: "#1DA1F2",
+      },
+      spacing: {
+        13: "52px",
       },
     },
   },
