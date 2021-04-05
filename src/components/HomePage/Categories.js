@@ -27,7 +27,7 @@ export default class Categories extends Component {
         faStore,
       ],
       bgColor: [
-        "bg-blue-400",
+        "bg-primary",
         "bg-purple-400",
         "bg-yellow-400",
         "bg-green-400",

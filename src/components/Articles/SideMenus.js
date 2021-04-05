@@ -8,8 +8,6 @@ export default class SideMenus extends Component {
         <SideMenu />
         <br></br>
         <SideMenu />
-        <br></br>
-        <SideMenu />
       </div>
     );
   }

@@ -6,7 +6,7 @@ import StickMenu from "../components/Articles/StickMenu";
 export default class Articles extends Component {
   render() {
     return (
-      <div className="mt-32 flex justify-start">
+      <div className="mt-32 flex justify-start ml-2">
         <div>
           <StickMenu />
         </div>
