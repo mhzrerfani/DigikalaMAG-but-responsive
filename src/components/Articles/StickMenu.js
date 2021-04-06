@@ -5,7 +5,7 @@ import { faSearch, faUser } from "@fortawesome/free-solid-svg-icons";
 export default class StickMenu extends Component {
   render() {
     return (
-      <div className="flex flex-col sticky top-5 mx-6">
+      <div className="flex flex-col sticky top-5 mx-6 stickMenu:hidden">
         <div className=" flex bg-primary w-24 h-24 ">
           <h6 className="mx-auto self-center text-center text-white text-2xl">
             Digikala

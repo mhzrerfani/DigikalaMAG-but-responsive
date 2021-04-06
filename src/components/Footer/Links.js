@@ -6,14 +6,14 @@ export default class Links extends Component {
   render() {
     return (
       <div className="bg-footer2">
-        <div className="w-full max-w-7xl flex-col mx-auto">
-          <div className="flex justify-between max-w-2xl pt-9 text-white">
+        <div className="w-full max-w-7xl flex-col mx-auto px-2">
+          <div className="flex justify-between max-w-2xl pt-9 text-white tablet:flex-row flex-col gap-3">
             <div>فروشگاه اینترنتی دیجی‌کالا</div>
             <div>درباره دیجی‌کالا مگ</div>
             <div>شرایط بازنشر محتوا</div>
             <div>فرصت‌های شغلی</div>
           </div>
-          <div className="flex justify-between py-9 text-footer3">
+          <div className="flex justify-between py-9 text-footer3 tablet:flex-row flex-col gap-5">
             <div>
               استفاده از مطالب دیجی‌کالا مگ برای مقاصد غیرتجاری با ذکر نام
               دیجی‌کالا مگ و لینک به منبع بلامانع است. حقوق این سایت به

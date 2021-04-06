@@ -3,7 +3,6 @@ import Logo from "../components/Header/Logo";
 import HashtagsList from "../components/Header/HashtagsList";
 import Search from "../components/Header/Search";
 import User from "../components/Header/User";
-import Dropdown from "../components/Header/Dropdown";
 
 export default class Header extends Component {
   render() {
@@ -20,13 +19,8 @@ export default class Header extends Component {
           </div>
         </div>
         <div className="loptop:hidden bg-primary w-full">
-          <div className="flex justify-items-center justify-between items-center mx-3">
-            <Dropdown />
+          <div className="flex items-center justify-content-center">
             <Logo />
-            <div className="flex items-center text-white">
-              <Search />
-              <User />
-            </div>
           </div>
         </div>
       </div>

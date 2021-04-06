@@ -16,7 +16,7 @@ export default class Posts extends Component {
   }
   render() {
     return (
-      <div className="grid desktop:grid-cols-3 loptop:grid-cols-3 tablet:grid-cols-2 grid-flow-row gap-4">
+      <div className="grid desktop:grid-cols-3 loptop:grid-cols-3 tablet:grid-cols-3 phone:grid-cols-2 grid-flow-row gap-4">
         {this.state.posts.map((post, className = "") => {
           return (
             <div className={`relative ${className}`} key={post.id}>

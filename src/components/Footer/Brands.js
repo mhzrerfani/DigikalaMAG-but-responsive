@@ -4,7 +4,7 @@ export default class Brands extends Component {
   render() {
     return (
       <div className="bg-footer1">
-        <div className="flex justify-between w-full max-w-7xl mx-auto h-20 items-center">
+        <div className="flex justify-between w-full max-w-7xl h-20 items-center px-3">
           <div className="flex text-footer3">
             <div className="ml-4">Test</div>
             <div className="ml-4">Test</div>

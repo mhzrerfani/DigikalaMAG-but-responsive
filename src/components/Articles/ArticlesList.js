@@ -16,7 +16,7 @@ export default class ArticlesList extends Component {
   }
   render() {
     return (
-      <div className="grid grid-cols-3 w-3/4 gap-4 ml-4">
+      <div className="grid desktop:grid-cols-3 loptop:grid-cols-2 tablet:grid-cols-2 w-3/4 gap-4 ml-4">
         {this.state.articles.map((article) => {
           return (
             <div className="shadow-xl">

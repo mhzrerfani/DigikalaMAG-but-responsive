@@ -3,11 +3,12 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     screens: {
-      phone: "640px",
+      phone: "482px",
       tablet: "768px",
       loptop: "1127px",
       desktop: "1289px",
       header: { max: "1127px" },
+      stickMenu: { max: "555px" },
     },
     fontFamily: {
       vazir: "Vazir",
