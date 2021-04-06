@@ -5,8 +5,9 @@ module.exports = {
     screens: {
       phone: "640px",
       tablet: "768px",
-      loptop: "1024px",
-      desktop: "1280px",
+      loptop: "1127px",
+      desktop: "1289px",
+      header: { max: "1127px" },
     },
     fontFamily: {
       vazir: "Vazir",

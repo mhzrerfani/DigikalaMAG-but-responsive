@@ -16,9 +16,12 @@ export default class User extends Component {
 
   render() {
     return (
-      <div className="flex text-gray-400 items-center pr-6">
+      <div className="flex header:text-white items-center pr-6 text-gray-400">
         <div className="border-gray-50">
-          <FontAwesomeIcon icon={faUser} className="text-4xl text-gray-400" />
+          <FontAwesomeIcon
+            icon={faUser}
+            className="text-4xl header:text-white text-gray-400"
+          />
         </div>
 
         <div onClick={this.toggleModal} className="mr-5">
