@@ -17,6 +17,7 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-scripts": "4.0.3",
+    "react-select": "^4.3.0",
     "sass": "^1.32.8",
     "swiper": "^6.5.0",
     "vazir-font": "^27.2.2",

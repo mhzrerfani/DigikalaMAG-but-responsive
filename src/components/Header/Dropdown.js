@@ -1,13 +1,16 @@
-import React, { Component } from "react";
-import Categories from "../HomePage/Categories";
+import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-export default class Dropdown extends Component {
-  render() {
-    return (
-      <div>
-        <FontAwesomeIcon icon={faBars} className="text-white text-2xl" />
-      </div>
-    );
-  }
-}
+
+const DropMenu = (props) => {
+  return (
+    <div className="absolute right-5">
+      <FontAwesomeIcon
+        icon={faBars}
+        className="text-white text-3xl"
+        onClick={props.toggle}
+      />
+    </div>
+  );
+};
+export default DropMenu;

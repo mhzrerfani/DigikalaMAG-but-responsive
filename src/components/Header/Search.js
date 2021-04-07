@@ -6,10 +6,7 @@ export default class Search extends Component {
   render() {
     return (
       <div className="pl-6 border-l-2 text-white header:border-gray-200">
-        <FontAwesomeIcon
-          icon={faSearch}
-          className="text-4xl header:text-white text-gray-400"
-        />
+        <FontAwesomeIcon icon={faSearch} className="text-4xl text-gray-400" />
       </div>
     );
   }
